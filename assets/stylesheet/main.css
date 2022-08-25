@@ -478,7 +478,7 @@ textarea {
   border-radius: 5px;
   color: #888;
   display: block;
-  margin: 5px 0 27px 0;
+  margin: 5px 0 5px 0;
   padding: 5px 8px;
 }
 .register-group input,
@@ -569,5 +569,5 @@ tbody td:only-of-type {
 .validation-msg {
   display: none;
   color: red;
-  font-weight: 100;
+  font-weight: 200;
 }
