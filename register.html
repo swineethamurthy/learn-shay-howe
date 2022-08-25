@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/stylesheet/main.css" />
+    <script src="assets/js/validation.js"></script>
     <title>Register</title>
   </head>
   <body>
@@ -63,50 +64,59 @@
           </ul>
         </div>
         <div>
-          <form action="#" method="post">
+          <form>
             <fieldset class="register-group">
-              <label>
-                Name
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full name"
-                  required
-                />
-              </label>
-
-              <label>
-                Email
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email address"
-                  required
-                />
-              </label>
-
-              <label>
-                Number of Passes
-                <select name="quantity" required>
-                  <option value="1" selected>1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </label>
-
-              <label>
-                Comments
-                <textarea name="comments"></textarea>
-              </label>
+              <div>
+                <label>
+                  Name
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Full name"
+                    required
+                  />
+                </label>
+                <span id="name-validation" class="validation-msg"> </span>
+              </div>
+              <div>
+                <label>
+                  Email
+                  <input
+                    name="email"
+                    id="email"
+                    placeholder="Email address"
+                    required
+                  />
+                </label>
+                <span id="email-validation" class="validation-msg"> </span>
+              </div>
+              <div>
+                <label>
+                  Number of Passes
+                  <select name="quantity" required>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </label>
+              </div>
+              <div>
+                <label>
+                  Comments
+                  <textarea name="comments" id="comments"></textarea>
+                </label>
+                <span id="comment-validation" class="validation-msg"> </span>
+              </div>
             </fieldset>
 
             <input
               class="btn btn-default"
-              type="submit"
               name="submit"
               value="Purchase"
+              onclick="formValidation()"
             />
           </form>
         </div>
