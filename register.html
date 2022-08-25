@@ -74,24 +74,24 @@
                     name="name"
                     id="name"
                     placeholder="Full name"
+                    pattern="[A-Za-z ]{1,15}"
                     required
-                    onblur="isValidName()"
+                    title="Names can have only alphabets and spaces and of maximum length 15."
                   />
-                </label>
-                <span id="name-validation" class="validation-msg"> </span>
+                <span id="name-validation" class="validation-msg"> </label>
               </div>
               <div>
                 <label>
                   Email
                   <input
                     name="email"
+                    type="email"
                     id="email"
                     placeholder="Email address"
                     required
-                    onblur="isValidEmail()"
                   />
                 </label>
-                <span id="email-validation" class="validation-msg"> </span>
+              
               </div>
               <div>
                 <label>
@@ -108,21 +108,16 @@
               <div>
                 <label>
                   Comments
-                  <textarea
-                    name="comments"
-                    id="comments"
-                    onblur="chkCommentLength()"
-                  ></textarea>
+                  <textarea name="comments" id="comments" maxlength=200 title="Comments are limited to 200 characters"></textarea>
                 </label>
-                <span id="comment-validation" class="validation-msg"> </span>
               </div>
             </fieldset>
 
             <input
               class="btn btn-default"
               name="submit"
+              type="submit"
               value="Purchase"
-              onclick="formValidation()"
             />
           </form>
         </div>

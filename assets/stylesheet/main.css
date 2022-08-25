@@ -560,14 +560,3 @@ tbody td:only-of-type {
 .schedule-offset {
   color: #a9b2b9;
 }
-
-/*
-  ========================================
-  Validation
-  ========================================
-*/
-.validation-msg {
-  display: none;
-  color: red;
-  font-weight: 200;
-}
