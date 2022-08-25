@@ -183,6 +183,7 @@ p {
   letter-spacing: 0.5px;
   margin: 0;
   text-transform: uppercase;
+  text-align: center;
 }
 .btn-alt {
   border: 1px solid #dfe2e5;
