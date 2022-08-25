@@ -6,6 +6,8 @@ function isValidName() {
       "name-validation",
       "Name can have only spaces and Alphabets and of maximum length 15."
     );
+  } else {
+    document.getElementById("name-validation").style.display = "none";
   }
 }
 
@@ -13,6 +15,8 @@ function isValidEmail() {
   var inputEmail = document.getElementById("email").value;
   if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputEmail)) {
     showValidation("email-validation", "Please enter a valid email ID");
+  } else {
+    document.getElementById("email-validation").style.display = "none";
   }
 }
 
@@ -23,6 +27,8 @@ function chkCommentLength() {
       "comment-validation",
       "Comments can have maximum length of 200."
     );
+  } else {
+    document.getElementById("comment-validation").style.display = "none";
   }
 }
 

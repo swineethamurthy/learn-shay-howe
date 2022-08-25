@@ -75,6 +75,7 @@
                     id="name"
                     placeholder="Full name"
                     required
+                    onblur="isValidName()"
                   />
                 </label>
                 <span id="name-validation" class="validation-msg"> </span>
@@ -87,6 +88,7 @@
                     id="email"
                     placeholder="Email address"
                     required
+                    onblur="isValidEmail()"
                   />
                 </label>
                 <span id="email-validation" class="validation-msg"> </span>
@@ -106,7 +108,11 @@
               <div>
                 <label>
                   Comments
-                  <textarea name="comments" id="comments"></textarea>
+                  <textarea
+                    name="comments"
+                    id="comments"
+                    onblur="chkCommentLength()"
+                  ></textarea>
                 </label>
                 <span id="comment-validation" class="validation-msg"> </span>
               </div>
